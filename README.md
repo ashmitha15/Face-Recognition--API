@@ -1,3 +1,2 @@
-# Face-Recognition--API
-
-A face recognition app to detect the face from the image you upload. Backend code.
+# Face-Recognition-Api
+A face recognition app (has code of the backend)
