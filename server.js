@@ -11,10 +11,10 @@ const image = require('./Controllers/image.js');
 const db= knex({
   client: 'pg', //type of database
   connection: {
-    host : '127.0.0.1', //where the database is hosted . 127.0.0.1 is the ip address of the local host(home addr)
-    port : 5432, //port where postgres is running
-    user : 'postgres', //owner of the postgres db
-    password : 'Ashsrav@1502', //passwrd of postgres
+    host : 'postgresql-contoured-64638',//pointing it to the heroku postgres database // initally used 127.0.0.1 where the database is hosted . 127.0.0.1 is the ip address of the local host(home addr)
+    port : 5432, //port where postgres is running locally
+    user : 'postgres', //owner of the postgres db locally installed
+    password : 'Ashsrav@1502', //passwrd of postgres installed locally
     database : 'Smart-brain'//name of the db
   }
 });
