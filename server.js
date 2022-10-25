@@ -27,7 +27,7 @@ app.use(bodyParser.json()); //body parser a middleware
 app.use(cors()); //middleware for CORS
 
 app.get('/',(req,res) => {
-	res.send(database.users);
+	res.send("It's working");
 })
 
 //endpoint for signin,checking for the correct user.Have to use post since sending confidential info using get might cause attacks
@@ -44,9 +44,9 @@ app.put('/image',(req,res) => {image.handleImage(req,res,db)})
 
 app.post('/imageurl',(req,res) => {image.handleApiCall(req,res)}) //endpoint for clarifai api calls
 
-
-app.listen(3000, () => {
-	console.log("app running on port 3000");
+const PORT = process.env.PORT;
+app.listen(PORT || 3000, () => {
+	console.log("app running on port ${PORT}");
 })
 
 
