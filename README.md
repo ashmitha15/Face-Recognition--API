@@ -1,2 +1,2 @@
-# Face-Recognition-Api
-A face recognition app (has code of the backend)
+# A backend repo of the Face-Recognition-React app
+
