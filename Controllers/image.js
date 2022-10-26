@@ -2,7 +2,7 @@ const Clarifai = require('clarifai') ;
 
 //moved clarifai api in the backend since there was a security alert in which the api key was visible
 const app = new Clarifai.App({
- apiKey: 'f394b94dbd4f4211a13bbdec1c987b57'
+ apiKey: process.env.API_CLARIFAI // stored in heroku backend
 });
 
 const handleApiCall = (req,res) => {
